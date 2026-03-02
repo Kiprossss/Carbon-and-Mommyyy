@@ -1,0 +1,381 @@
+/* 🖤 BASE */
+
+html, body{
+height:100%;
+margin:0;
+background:#0b0b0f;
+}
+
+body{
+font-family:'Cormorant Garamond', serif;
+color:#e4d9ff;
+background:radial-gradient(circle at top, #1a1023, #0b0b0f);
+background-attachment:fixed;
+overflow:hidden;
+}
+
+/* 🌌 CENTERING SHRINE */
+
+.viewport{
+position:fixed;
+inset:0;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+
+.container{
+width:100%;
+max-width:420px;
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+gap:20px;
+}
+
+/* 🖤 TITLE */
+
+.title{
+font-family:'Cinzel', serif;
+letter-spacing:4px;
+font-size:30px;
+color:#6e5aa6;
+animation:heartbeat 2.5s infinite;
+}
+
+/* ⏳ TIMER */
+
+.timer{
+font-size:16px;
+line-height:1.6;
+opacity:0.9;
+}
+
+/* 🌙 GREETING */
+
+.greeting{
+font-family:'Cinzel';
+font-size:13px;
+letter-spacing:3px;
+opacity:0.75;
+}
+
+/* 🩸 BUTTONS */
+
+.buttons{
+width:100%;
+display:flex;
+flex-direction:column;
+gap:14px;
+}
+
+button{
+background:transparent;
+border:1px solid #6e5aa6;
+color:#e4d9ff;
+padding:16px;
+font-size:17px;
+border-radius:14px;
+width:100%;
+transition:0.4s;
+}
+
+button:active{
+box-shadow:0 0 18px #6e5aa6;
+}
+
+/* 🔮 SECRET INPUT */
+
+#secretInput{
+background:transparent;
+border:none;
+border-bottom:1px solid #6e5aa6;
+color:#e4d9ff;
+text-align:center;
+outline:none;
+opacity:0.5;
+width:100%;
+}
+
+/* 🖤 MODAL */
+
+.modal{
+position:fixed;
+inset:0;
+display:none;
+justify-content:center;
+align-items:center;
+background:rgba(0,0,0,0.65);
+z-index:999;
+}
+
+.modal-content{
+background:rgba(20,10,30,0.95);
+padding:30px;
+border-radius:16px;
+border:1px solid #6e5aa6;
+box-shadow:0 0 30px #6e5aa644;
+max-width:300px;
+text-align:center;
+animation:fadeUp 0.6s ease;
+}
+
+.close{
+position:absolute;
+margin-top:-20px;
+margin-left:260px;
+font-size:26px;
+}
+
+/* 🌫 RITUAL */
+
+.ritual{
+position:fixed;
+inset:0;
+background:#0b0b0f;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:2000;
+animation:fadeOut 3s forwards 2.5s;
+}
+
+.ritual-text{
+font-family:'Cinzel';
+letter-spacing:3px;
+animation:fadeIn 2s forwards;
+opacity:0;
+}
+
+/* 💜 AURA */
+
+.aura{
+position:fixed;
+width:600px;
+height:600px;
+background:radial-gradient(circle,#6e5aa6 0%, transparent 60%);
+filter:blur(140px);
+animation:float 18s infinite alternate;
+z-index:-2;
+}
+
+/* 🌙 MOON */
+
+.moon{
+position:fixed;
+top:60px;
+width:90px;
+height:90px;
+border-radius:50%;
+background:radial-gradient(circle,#e4d9ff,#6e5aa6);
+opacity:0.15;
+filter:blur(4px);
+animation:float 20s infinite alternate;
+z-index:-1;
+}
+
+/* 🦇 BATS */
+
+.bats span{
+position:fixed;
+font-size:18px;
+opacity:0.2;
+animation:fly 18s linear infinite;
+}
+
+.bats span:nth-child(1){top:10%; left:-10%;}
+.bats span:nth-child(2){top:40%; left:-15%; animation-delay:6s;}
+.bats span:nth-child(3){top:70%; left:-20%; animation-delay:12s;}
+
+/* 🥀 LOVE LETTER */
+
+.love-letter{
+font-family:'Cinzel';
+letter-spacing:2px;
+font-size:13px;
+opacity:0;
+transition:2s;
+}
+
+/* 💓 HEARTBEAT BG */
+
+body.heartbeat-bg{
+box-shadow:inset 0 0 120px #ff4d6d22;
+}
+
+/* ✨ LOVE BUBBLE */
+
+.love-bubble{
+  position:fixed;
+  bottom:120px;
+  left:50%;
+  transform:translateX(-50%) translateY(20px);
+  background:rgba(20,10,30,0.85);
+  border:1px solid #6e5aa6;
+  padding:14px 22px;
+  border-radius:18px;
+  color:#e4d9ff;
+  font-style:italic;
+  opacity:0;
+  pointer-events:none;
+  transition:.6s ease;
+  max-width:80%;
+  text-align:center;
+}
+
+.love-bubble.show{
+  opacity:1;
+  transform:translateX(-50%) translateY(0);
+}
+
+/* 🖤 whisper input */
+
+.whisper-box{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:10px;
+  margin-top:30px;
+}
+
+.whisper-box input{
+  background:transparent;
+  border:none;
+  border-bottom:1px solid #6e5aa6;
+  color:#e4d9ff;
+  padding:8px;
+  text-align:center;
+  width:180px;
+  outline:none;
+  font-style:italic;
+}
+
+.whisper-box button{
+  background:none;
+  border:none;
+  color:#6e5aa6;
+  font-size:18px;
+}
+
+/* 🌌 STARS */
+
+#stars{
+position:fixed;
+inset:0;
+z-index:-3;
+}
+
+/* 🎬 ANIMATIONS */
+
+@keyframes fadeIn{to{opacity:1}}
+@keyframes fadeOut{to{opacity:0;visibility:hidden}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1}}
+@keyframes float{from{transform:translate(-50px,-50px)}to{transform:translate(50px,50px)}}
+@keyframes fly{to{transform:translateX(140vw)}}
+@keyframes heartbeat{
+0%,100%{text-shadow:0 0 6px #6e5aa6;}
+50%{text-shadow:0 0 18px #ff4d6d;}
+}
+
+.midnight-mode .title{
+opacity:0.6;
+}
+
+.midnight-mode .greeting::after{
+content:"the night belongs to us";
+display:block;
+font-size:11px;
+letter-spacing:2px;
+opacity:0.6;
+margin-top:6px;
+}
+
+.hidden{
+display:none;
+}
+
+.love-bubble{
+max-width:300px;
+text-align:center;
+}
+
+.sky{
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.stars{
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(1px 1px at 5% 10%, #ffffffcc, transparent),
+    radial-gradient(1px 1px at 15% 80%, #ffffffaa, transparent),
+    radial-gradient(1.5px 1.5px at 25% 30%, #ffffffcc, transparent),
+    radial-gradient(2px 2px at 35% 60%, #ffffffaa, transparent),
+    radial-gradient(1px 1px at 45% 20%, #ffffffcc, transparent),
+    radial-gradient(1.5px 1.5px at 55% 75%, #ffffffaa, transparent),
+    radial-gradient(2px 2px at 65% 40%, #ffffffcc, transparent),
+    radial-gradient(1px 1px at 75% 15%, #ffffffaa, transparent),
+    radial-gradient(1.5px 1.5px at 85% 85%, #ffffffcc, transparent),
+    radial-gradient(2px 2px at 95% 50%, #ffffffaa, transparent),
+
+    radial-gradient(1px 1px at 10% 50%, #ffffff88, transparent),
+    radial-gradient(1px 1px at 20% 90%, #ffffff88, transparent),
+    radial-gradient(1px 1px at 30% 10%, #ffffff88, transparent),
+    radial-gradient(1px 1px at 40% 70%, #ffffff88, transparent),
+    radial-gradient(1px 1px at 60% 5%, #ffffff88, transparent),
+    radial-gradient(1px 1px at 70% 65%, #ffffff88, transparent),
+    radial-gradient(1px 1px at 80% 35%, #ffffff88, transparent),
+    radial-gradient(1px 1px at 90% 95%, #ffffff88, transparent);
+
+  animation: twinkle 4s infinite alternate;
+}
+
+@keyframes twinkle{
+  from{opacity: .5;}
+  to{opacity: 1;}
+}
+
+.moon{
+  position: absolute;
+  top: 80px;
+  right: 120px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #fff, #cfcfcf 60%, #999);
+  box-shadow: 0 0 25px #ffffff55;
+  animation: floatMoon 6s ease-in-out infinite;
+}
+
+@keyframes floatMoon{
+  0%,100%{transform: translateY(0);}
+  50%{transform: translateY(-10px);}
+}
+
+.web{
+  position: absolute;
+  width: 220px;
+  opacity: .25;
+}
+
+.web-left{
+  top: 0;
+  left: 0;
+}
+
+.web-right{
+  top: 0;
+  right: 0;
+  transform: scaleX(-1);
+}
+
+.container{
+  position: relative;
+  z-index: 1;
+}
