@@ -1,5 +1,5 @@
 window.overthinking = [
-"Shhh… your mind deserves rest.",
+"Shhh... your mind deserves rest.",
 "None of those fears are real here.",
 "You are enough. Always.",
 "I’m not going anywhere.",
@@ -7,7 +7,7 @@ window.overthinking = [
 "Your thoughts are loud, but my love is louder.",
 "Come here and let your mind be quiet.",
 "You don’t have to carry everything alone.",
-"I’ve got you — now and always.",
+"I’ve got you now and always.",
 "Let me hold the scary thoughts for you.",
 "Everything is okay right here with me.",
 "Slow breaths, baby. I’m here.",
@@ -29,4 +29,5 @@ window.overthinking = [
 "I’m not leaving, not now, not ever.",
 "You are more than your thoughts.",
 "Peace begins with us."
+
 ];
