@@ -29,5 +29,6 @@ window.sad = [
 "Im proud of everything that youre doing my love.",
 "I’m calming every storm inside you.",
 "Your tears are safe with me.",
-"I love you more when you’re like this — because I can take care of you."
+"I love you more when you’re like this because I can take care of you."
+
 ];
